@@ -1,0 +1,1071 @@
+{
+    "declaration": {
+        "attributes": {
+            "version": "1.0",
+            "encoding": "utf-8"
+        }
+    },
+    "elements": [
+        {
+            "type": "doctype",
+            "doctype": "wml PUBLIC \"-//WAPFORUM//DTD WML 1.1//EN\" \"http://www.wapforum.org/DTD/wml_1.1.xml\""
+        },
+        {
+            "type": "element",
+            "name": "wml",
+            "elements": [
+                {
+                    "type": "element",
+                    "name": "head",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "meta",
+                            "attributes": {
+                                "http-equiv": "Cache-Control",
+                                "content": "max-age=0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "comment",
+                    "comment": "如果你看到这行信息，说明在使用的浏览器不支持文库wap版使用的wml代码，推荐你更换qq或uc浏览器(注意选择非HD版)"
+                },
+                {
+                    "type": "element",
+                    "name": "card",
+                    "attributes": {
+                        "id": "index.php",
+                        "title": "轻小说文库"
+                    },
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "p",
+                            "attributes": {
+                                "align": "center"
+                            },
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "轻小说文库WAP版"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "wap.wenku8.com\r\n"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "p",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n\r\n您好!游客,"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/login.php",
+                                        "title": "登录"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "登录"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/register.php",
+                                        "title": "注册"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "注册"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/message.php?box=inbox"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "消息"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/bookcase.php"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "书架"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/sortlist.php"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "目录"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/sort.php",
+                                        "title": "分类"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "分类"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/top.php",
+                                        "title": "排行"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "排行"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "."
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/sortlist.php?fullflag=1"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "全本"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "input",
+                                    "attributes": {
+                                        "name": "searchkey",
+                                        "type": "text",
+                                        "size": "5",
+                                        "maxlength": "30",
+                                        "value": ""
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "anchor",
+                                    "attributes": {
+                                        "title": "搜书名"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "搜书名\r\n"
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "go",
+                                            "attributes": {
+                                                "href": "http://www.wenku8.com/wap/article/search.php",
+                                                "method": "post"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "action",
+                                                        "value": "search"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "searchtype",
+                                                        "value": "articlename"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "searchkey",
+                                                        "value": "$(searchkey)"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "-\r\n"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "anchor",
+                                    "attributes": {
+                                        "title": "作者"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "作者\r\n"
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "go",
+                                            "attributes": {
+                                                "href": "http://www.wenku8.com/wap/article/search.php",
+                                                "method": "post"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "action",
+                                                        "value": "search"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "searchtype",
+                                                        "value": "author"
+                                                    }
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "postfield",
+                                                    "attributes": {
+                                                        "name": "searchkey",
+                                                        "value": "$(searchkey)"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n【文库公告】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n[醒目]"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/hexie.php",
+                                        "title": "更多"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "应版权方要求删除部分小说"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n【今日热榜】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=dayvisit",
+                                        "title": "更多"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "更多.."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1592"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "OVERLORD不死者之王"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1973"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "欢迎来到实力至上主义的教室"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "妖怪公主渴望爱"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1715"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "爆肝工程师的异世界狂想曲(异世界狂想曲)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2111"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "龙王的工作！"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2066"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "骸骨骑士大人异世界冒险中"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n【最近更新】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=lastupdate",
+                                        "title": "更多"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "更多.."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2314"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "童话魔法使(原书·原书使)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1916"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "世界末日的世界录"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1973"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "欢迎来到实力至上主义的教室"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=918"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "邪神大沼"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "妖怪公主渴望爱"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1953"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "中古货也想谈恋爱！(中古也要谈恋爱！)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n【新书风云榜】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=postdate",
+                                        "title": "更多"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "更多.."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "妖怪公主渴望爱"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2358"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "原来我家是魔力点"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2355"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "凶手就是你？"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2356"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "女孩不会对完美恋爱怦然心动的三个理由"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2352"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "香魅堂奇谭"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2357"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "她是否一人独行？Does She Walk Alone?"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n【每周书单】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1850"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "皇帝圣印战记"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2111"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "龙王的工作！"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2353"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "薇尔莉特·伊芙加登(紫罗兰永恒花园)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1715"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "爆肝工程师的异世界狂想曲(异世界狂想曲)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1696"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "博多豚骨拉面"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2314"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "童话魔法使(原书·原书使)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n【快速导航】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=allvisit"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "热度排名"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "|"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=goodnum"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "最受关注"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=anime"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "已动画化"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "|"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=weekvote"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "会员热推"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n【QQ超级群】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n同好会：56102032"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n御宅社：255149459"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n同萌会：385413858"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n只能加一个请勿多加"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n【友情推荐】"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://wapp.baidu.com/f?kw=%C7%E1%CE%C4%BF%E2"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "轻文库吧"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "|"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://wapp.baidu.com/f?kw=%C7%E1%D0%A1%CB%B5"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "轻小说吧"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "p",
+                                    "attributes": {
+                                        "align": "center"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "a",
+                                            "attributes": {
+                                                "href": "http://www.wenku8.com/wap/newmessage.php?tosys=1"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "联系管理员"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "br"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "\r\n(c) 轻小说文库"
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "br"
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "a",
+                                            "attributes": {
+                                                "href": "http://www.wenku8.com"
+                                            },
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "进入电脑版文库"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "img",
+                                    "attributes": {
+                                        "src": "",
+                                        "width": "0",
+                                        "height": "0"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "img",
+                                    "attributes": {
+                                        "src": "http://c.cnzz.com/wapstat.php?siteid=1254174784&r=&rnd=1087546250",
+                                        "width": "0",
+                                        "height": "0"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

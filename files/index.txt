@@ -1,0 +1,23 @@
+/** 商品条码 */
+private String barcode;
+
+/** 商品条码类型 */
+private Integer barcodeType;
+
+/** 编号 */
+private String sn;
+
+/** 名称 */
+private String name;
+
+/** 全称 */
+private String fullName;
+
+/** 类型 */
+private Type type;
+
+/**专销商品类型*/
+private String soleProductType;
+
+/** 产品属性 */
+private ProductAttributes productAttributes;
