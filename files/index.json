@@ -30,7 +30,7 @@
                 },
                 {
                     "type": "comment",
-                    "comment": "如果你看到这行信息，说明在使用的浏览器不支持文库wap版使用的wml代码，推荐你更换qq或uc浏览器(注意选择非HD版)"
+                    "comment": "如果你看到这行信息，说明在使用的浏览器不支持文库wap版使用的wml代码，推荐你更换uc浏览器(注意选择非HD版)"
                 },
                 {
                     "type": "element",
@@ -73,7 +73,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/login.php",
+                                        "href": "http://www.wenku8.net/wap/login.php",
                                         "title": "登录"
                                     },
                                     "elements": [
@@ -91,7 +91,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/register.php",
+                                        "href": "http://www.wenku8.net/wap/register.php",
                                         "title": "注册"
                                     },
                                     "elements": [
@@ -109,7 +109,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/message.php?box=inbox"
+                                        "href": "http://www.wenku8.net/wap/message.php?box=inbox"
                                     },
                                     "elements": [
                                         {
@@ -126,7 +126,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/bookcase.php"
+                                        "href": "http://www.wenku8.net/wap/article/bookcase.php"
                                     },
                                     "elements": [
                                         {
@@ -143,7 +143,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/sortlist.php"
+                                        "href": "http://www.wenku8.net/wap/article/sortlist.php"
                                     },
                                     "elements": [
                                         {
@@ -160,7 +160,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/sort.php",
+                                        "href": "http://www.wenku8.net/wap/article/sort.php",
                                         "title": "分类"
                                     },
                                     "elements": [
@@ -178,7 +178,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/top.php",
+                                        "href": "http://www.wenku8.net/wap/article/top.php",
                                         "title": "排行"
                                     },
                                     "elements": [
@@ -196,7 +196,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/sortlist.php?fullflag=1"
+                                        "href": "http://www.wenku8.net/wap/article/sortlist.php?fullflag=1"
                                     },
                                     "elements": [
                                         {
@@ -235,7 +235,7 @@
                                             "type": "element",
                                             "name": "go",
                                             "attributes": {
-                                                "href": "http://www.wenku8.com/wap/article/search.php",
+                                                "href": "http://www.wenku8.net/wap/article/search.php",
                                                 "method": "post"
                                             },
                                             "elements": [
@@ -286,7 +286,7 @@
                                             "type": "element",
                                             "name": "go",
                                             "attributes": {
-                                                "href": "http://www.wenku8.com/wap/article/search.php",
+                                                "href": "http://www.wenku8.net/wap/article/search.php",
                                                 "method": "post"
                                             },
                                             "elements": [
@@ -336,21 +336,15 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "\r\n[醒目]"
+                                    "text": "\r\n[通告]本页面推荐使用UC浏览器访问"
                                 },
                                 {
                                     "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.com/wap/hexie.php",
-                                        "title": "更多"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "应版权方要求删除部分小说"
-                                        }
-                                    ]
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n[通告]应版权方要求删除部分小说"
                                 },
                                 {
                                     "type": "element",
@@ -364,7 +358,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=dayvisit",
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=dayvisit",
                                         "title": "更多"
                                     },
                                     "elements": [
@@ -382,24 +376,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1592"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "OVERLORD不死者之王"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1973"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1973"
                                     },
                                     "elements": [
                                         {
@@ -416,12 +393,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2229"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "妖怪公主渴望爱"
+                                            "text": "贤者之孙"
                                         }
                                     ]
                                 },
@@ -433,12 +410,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1715"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2290"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "爆肝工程师的异世界狂想曲(异世界狂想曲)"
+                                            "text": "这是你与我的最后战场，或是开创世界的圣战(你与我最后的战场，亦或是世界起始的圣战)"
                                         }
                                     ]
                                 },
@@ -450,12 +427,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2111"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2198"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "龙王的工作！"
+                                            "text": "逆转召唤～全校被召唤到连隐藏设定我都了若指掌的异世界～"
                                         }
                                     ]
                                 },
@@ -467,12 +444,29 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2066"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2536"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "骸骨骑士大人异世界冒险中"
+                                            "text": "这个勇者明明超TUEEE却过度谨慎"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2080"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "平凡职业造就世界最强"
                                         }
                                     ]
                                 },
@@ -488,7 +482,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=lastupdate",
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=lastupdate",
                                         "title": "更多"
                                     },
                                     "elements": [
@@ -506,12 +500,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2314"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2501"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "童话魔法使(原书·原书使)"
+                                            "text": "被学生胁迫这事儿是犯罪吗？"
                                         }
                                     ]
                                 },
@@ -523,12 +517,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1916"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2632"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "世界末日的世界录"
+                                            "text": "在流星雨中逝去的你(令你逝去的流星雨)"
                                         }
                                     ]
                                 },
@@ -540,12 +534,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1973"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1240"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "欢迎来到实力至上主义的教室"
+                                            "text": "千之魔剑与盾之少女"
                                         }
                                     ]
                                 },
@@ -557,12 +551,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=918"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2290"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "邪神大沼"
+                                            "text": "这是你与我的最后战场，或是开创世界的圣战(你与我最后的战场，亦或是世界起始的圣战)"
                                         }
                                     ]
                                 },
@@ -574,12 +568,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2229"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "妖怪公主渴望爱"
+                                            "text": "贤者之孙"
                                         }
                                     ]
                                 },
@@ -591,12 +585,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1953"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2198"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "中古货也想谈恋爱！(中古也要谈恋爱！)"
+                                            "text": "逆转召唤～全校被召唤到连隐藏设定我都了若指掌的异世界～"
                                         }
                                     ]
                                 },
@@ -612,7 +606,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=postdate",
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=postdate",
                                         "title": "更多"
                                     },
                                     "elements": [
@@ -630,12 +624,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2359"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2626"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "妖怪公主渴望爱"
+                                            "text": "最强出涸皇子的暗跃帝位争夺"
                                         }
                                     ]
                                 },
@@ -647,12 +641,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2358"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2625"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "原来我家是魔力点"
+                                            "text": "点满农民相关技能后，不知为何就变强了。"
                                         }
                                     ]
                                 },
@@ -664,12 +658,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2355"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2623"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "凶手就是你？"
+                                            "text": "数字拯救弱小国家！"
                                         }
                                     ]
                                 },
@@ -681,12 +675,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2356"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2631"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "女孩不会对完美恋爱怦然心动的三个理由"
+                                            "text": "数位伊甸 Digital Eden Attracts Humanity"
                                         }
                                     ]
                                 },
@@ -698,12 +692,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2352"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2619"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "香魅堂奇谭"
+                                            "text": "YAKITORI"
                                         }
                                     ]
                                 },
@@ -715,12 +709,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2357"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2630"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "她是否一人独行？Does She Walk Alone?"
+                                            "text": "Fate Requiem"
                                         }
                                     ]
                                 },
@@ -740,12 +734,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1850"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1508"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "皇帝圣印战记"
+                                            "text": "在地下城寻求邂逅是否搞错了什么(期待在地下城邂逅有错吗)"
                                         }
                                     ]
                                 },
@@ -757,12 +751,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2111"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2080"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "龙王的工作！"
+                                            "text": "平凡职业造就世界最强"
                                         }
                                     ]
                                 },
@@ -774,12 +768,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2353"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2346"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "薇尔莉特·伊芙加登(紫罗兰永恒花园)"
+                                            "text": "只要长得可爱，即使是变态你也喜欢吗？"
                                         }
                                     ]
                                 },
@@ -791,12 +785,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1715"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1755"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "爆肝工程师的异世界狂想曲(异世界狂想曲)"
+                                            "text": "异世界超能魔术师"
                                         }
                                     ]
                                 },
@@ -808,12 +802,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=1696"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2306"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "博多豚骨拉面"
+                                            "text": "Re:Stage！"
                                         }
                                     ]
                                 },
@@ -825,12 +819,12 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/articleinfo.php?id=2314"
+                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=827"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "童话魔法使(原书·原书使)"
+                                            "text": "COP CRAFT(全缉毒狂潮)"
                                         }
                                     ]
                                 },
@@ -850,7 +844,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=allvisit"
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=allvisit"
                                     },
                                     "elements": [
                                         {
@@ -867,7 +861,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=goodnum"
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=goodnum"
                                     },
                                     "elements": [
                                         {
@@ -884,7 +878,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=anime"
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=anime"
                                     },
                                     "elements": [
                                         {
@@ -901,7 +895,7 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.com/wap/article/toplist.php?sort=weekvote"
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=weekvote"
                                     },
                                     "elements": [
                                         {
@@ -932,7 +926,7 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "\r\n御宅社：255149459"
+                                    "text": "\r\n御宅社：230063730"
                                 },
                                 {
                                     "type": "element",
@@ -1007,7 +1001,7 @@
                                             "type": "element",
                                             "name": "a",
                                             "attributes": {
-                                                "href": "http://www.wenku8.com/wap/newmessage.php?tosys=1"
+                                                "href": "http://www.wenku8.net/wap/newmessage.php?tosys=1"
                                             },
                                             "elements": [
                                                 {
@@ -1032,7 +1026,7 @@
                                             "type": "element",
                                             "name": "a",
                                             "attributes": {
-                                                "href": "http://www.wenku8.com"
+                                                "href": "https://www.wenku8.net"
                                             },
                                             "elements": [
                                                 {
@@ -1056,7 +1050,7 @@
                                     "type": "element",
                                     "name": "img",
                                     "attributes": {
-                                        "src": "http://c.cnzz.com/wapstat.php?siteid=1254174784&r=&rnd=1087546250",
+                                        "src": "http://c.cnzz.com/wapstat.php?siteid=1254174784&r=&rnd=983022547",
                                         "width": "0",
                                         "height": "0"
                                     }

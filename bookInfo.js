@@ -1,62 +1,53 @@
+// 2.
 // 拉取资源(详情)
-const fs = require("fs");
-const path = require('path');
-const Crawler = require("crawler");
-const convert = require('xml-js');
+const fs = require('fs')
+const Crawler = require('crawler')
+const convert = require('xml-js')
 
-const updatedList = fs.readFileSync('./files/info/updatedList.json', 'utf8');
+const updatedList = fs.readFileSync('./files/updatedList.json', 'utf8')
 
-const GetUpdatedUrls = updatedList => {
-    return updatedList.node.map(data => {
-        return data.href;
-    });
-};
+// const GetUpdatedUrls = updatedList => updatedList.node.map(item => item.href)
 
-const urls = GetUpdatedUrls(JSON.parse(updatedList));
-console.log(urls);
+const urls = JSON.parse(updatedList).node
+console.log('urls', urls)
 
 let crawler = new Crawler({
-    encoding: null, // 编码
-    maxConnections : 5, // 最大并发请求数
-    callback : (error, res, done) => {
-        if (error) {
-            console.log(error);
-        } else {
-            console.log(res.options)
-            // fs.createWriteStream(res.options.filename).write(res.body);
-        }
-        done();
+  encoding: null, // 编码
+  maxConnections: 5, // 最大并发请求数
+  callback: (err, res, done) => {
+    if (err) console.log(err)
+    if (!err) {
+      console.log(res.options)
+      // fs.createWriteStream(res.options.filename).write(res.body)
     }
-});
+    done()
+  }
+})
 
-urls.forEach((data) => {
-    let url = {
-        uri: data,
-        jQuery: true,
+urls.forEach(item => {
+  console.log('item.href', item.href)
+  let url = {
+    uri: item.href,
+    jQuery: true,
 
-        callback: (error, res, done) => {
-            if (error) {
-                console.log(error);
-            } else {
-                main(res);
-            }
-            done();
-        }
-    };
-    urls.push(url);
-});
+    callback: (err, res, done) => {
+      if (err) console.log(err)
+      if (!err) main(res, item.title)
+      done()
+    }
+  }
+  urls.push(url)
+})
 
-const main = res => {
-    console.log('ppp');
-    const xml = res.body.toString();
-    const json = convert.xml2json(xml, {compact: false, spaces: 4});
-    let node = JSON.stringify(json); // 返回的结构
-    fs.writeFile('./files/info/index.html', xml, (err) => {
-        if (err) return console.error(err);
-    });
-};
+const main = (res, name) => {
+  console.log('name', name)
+  const xml = res.body.toString()
+  const json = convert.xml2json(xml, { compact: false, spaces: 4 })
+  const node = JSON.stringify(json) // 返回的结构
+  fs.writeFileSync('./files/info/index.html', xml)
+}
 
-// // 获取最新更新的轻小说列表（格式化后的xml的json结构）
+// // 获取最新更新的xx列表（格式化后的xml的json结构）
 // const GetUpdatedList = json => {
 //     let node = [];
 //     const newBook = json.elements[1].elements[2].elements[1];
@@ -79,4 +70,4 @@ const main = res => {
 //     });
 // };
 
-crawler.queue(urls);
+crawler.queue(urls)
