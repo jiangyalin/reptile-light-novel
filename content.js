@@ -1,12 +1,12 @@
-// 2.
-// 拉取资源(信息)
+// 4.
+// 拉取资源(内容)
 const fs = require('fs')
 const Crawler = require('crawler')
 const convert = require('xml-js')
 
-const updatedList = fs.readFileSync('./files/updatedList.json', 'utf8')
+const updatedList = fs.readFileSync('./files/chapter.json', 'utf8')
 
-const node = JSON.parse(updatedList).node
+const node = [JSON.parse(updatedList).node[0]]
 const map = {}
 node.forEach(item => map[item.href] = item.title)
 
@@ -19,6 +19,7 @@ let crawler = new Crawler({
     done()
   }
 })
+
 const urls = []
 node.forEach((item, i) => {
   let url = {

@@ -6,7 +6,7 @@ const convert = require('xml-js')
 
 const bookInfo = fs.readFileSync('./files/bookInfo.json', 'utf8')
 
-const node = JSON.parse(bookInfo).node
+const node = [JSON.parse(bookInfo).node[0]]
 const map = {}
 node.forEach(item => map[item.href] = item.title)
 
@@ -82,18 +82,32 @@ const main = (res, book, page) => {
   chapter = chapter.map(item => {
     let node = item.node
     if (item.bookTitle === book.title) {
-      node[page] = href
+      node[page - 1] = href
     }
     return {
-      node,
-      ...item
+      ...item,
+      node
     }
   })
   if (thisEndPage === total) {
-    fs.writeFileSync('./files/chapter.json', JSON.stringify({
-      tips: '章节',
-      node: chapter
-    }))
+    setTimeout(() => {
+      chapter = chapter.map(item => {
+        const node = []
+        item.node.forEach(data => {
+          data.forEach(arr => {
+            node.push(arr)
+          })
+        })
+        return {
+          ...item,
+          node
+        }
+      })
+      fs.writeFileSync('./files/chapter.json', JSON.stringify({
+        tips: '章节',
+        node: chapter
+      }))
+    }, 1000)
   }
 }
 
