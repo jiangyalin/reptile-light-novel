@@ -78,11 +78,11 @@ const main = (res, book, page) => {
   const json = convert.xml2json(xml, {compact: false, spaces: 4})
   const node = JSON.stringify(json) // 返回的结构
   fs.writeFileSync('./files/content/' + book.title + ' ' + page + '.html', xml)
-  const href = GetUpdatedList(JSON.parse(JSON.parse(node))) // xx列表
+  const joint = GetUpdatedList(JSON.parse(JSON.parse(node))) // xx列表
   chapter = chapter.map(item => {
     let node = item.node
     if (item.bookTitle === book.title) {
-      node[page - 1] = href
+      node[page - 1] = joint
     }
     return {
       ...item,
@@ -95,7 +95,10 @@ const main = (res, book, page) => {
         const node = []
         item.node.forEach(data => {
           data.forEach(arr => {
-            node.push(arr)
+            node.push({
+              ...arr,
+              bookName: item.bookTitle
+            })
           })
         })
         return {
