@@ -1,12 +1,12 @@
-// 2.
-// 拉取资源(详情)
+// 3.
+// 拉取资源(章节)
 const fs = require('fs')
 const Crawler = require('crawler')
 const convert = require('xml-js')
 
 const bookInfo = fs.readFileSync('./files/bookInfo.json', 'utf8')
 
-const node = [JSON.parse(bookInfo).node[0]]
+const node = JSON.parse(bookInfo).node
 const map = {}
 node.forEach(item => map[item.href] = item.title)
 
@@ -20,54 +20,99 @@ let crawler = new Crawler({
   }
 })
 const urls = []
+
 node.forEach((item, i) => {
   let url = {
-    uri: item.href + '&page=2',
+    uri: item.href,
     jQuery: true,
 
     callback: (err, res, done) => {
       if (err) console.log(err)
-      if (!err) main(res, item.title, i === node.length - 1)
+      if (!err) getTotalPageMain(res, item)
       done()
     }
   }
   urls.push(url)
 })
 
-const chapter = []
+let total = 0 // 所有book的总页数
+let thisEndPage = 0 // 当前完成页数
+let chapter = []
 
-const main = (res, name, isEnd) => {
+const getTotalPageMain = (res, obj) => {
   const xml = res.body.toString()
   const json = convert.xml2json(xml, {compact: false, spaces: 4})
   const node = JSON.stringify(json) // 返回的结构
-  fs.writeFileSync('./files/chapter/' + name + '.html', xml)
+  const totalPage = GetTotalPage(JSON.parse(JSON.parse(node)))
+  total += totalPage
+  if (!chapter.find(item => item.title === obj.title)) {
+    chapter.push({
+      bookTitle: obj.title,
+      node: new Array(totalPage)
+    })
+  }
+  const crawlerPageUrls = GetCrawlerPageUrl(obj, totalPage)
+  crawler.queue(crawlerPageUrls)
+}
+
+// 生成每页对象
+const GetCrawlerPageUrl = (book, totalPage) => {
+  const arr = []
+  for (let i = 0; i < Number(totalPage); i++) {
+    arr.push({
+      uri: book.href + '&page=' + (i + 1),
+      jQuery: true,
+      callback: (err, res, done) => {
+        if (err) console.log(err)
+        if (!err) main(res, book, i + 1)
+        done()
+      }
+    })
+  }
+  return arr
+}
+
+const main = (res, book, page) => {
+  thisEndPage ++
+  const xml = res.body.toString()
+  const json = convert.xml2json(xml, {compact: false, spaces: 4})
+  const node = JSON.stringify(json) // 返回的结构
+  fs.writeFileSync('./files/content/' + book.title + ' ' + page + '.html', xml)
   const href = GetUpdatedList(JSON.parse(JSON.parse(node))) // xx列表
-  chapter.push({
-    title: name,
-    href: href
+  chapter = chapter.map(item => {
+    let node = item.node
+    if (item.bookTitle === book.title) {
+      node[page] = href
+    }
+    return {
+      node,
+      ...item
+    }
   })
-  // if (isEnd) {
-  //   fs.writeFileSync('./files/test.json', JSON.stringify({
-  //     tips: 'list',
-  //     node: chapter
-  //   }))
-  // }
+  if (thisEndPage === total) {
+    fs.writeFileSync('./files/chapter.json', JSON.stringify({
+      tips: '章节',
+      node: chapter
+    }))
+  }
+}
+
+// 获取总页数
+const GetTotalPage = json => {
+  const text = (json.elements[1].elements[1].elements[0].elements
+    .find(item => item.type === 'text' && item.text.indexOf('[') === 0 && item.text.indexOf(']') === item.text.length - 1) || {}).text
+  return text ? Number(text.substring(text.indexOf('/') + 1, text.length - 1)) : 0
 }
 
 // 获取最新更新的xx列表（格式化后的xml的json结构）
 const GetUpdatedList = json => {
   const dom = json.elements[1].elements[1].elements[0].elements.filter(item => item.name === 'a' && item.attributes)
-  const chapterList = dom.filter(item => item.attributes.href.indexOf('readchapter.php?aid=') !== -1).map(item => {
+  return dom.filter(item => item.attributes.href.indexOf('readchapter.php?aid=') !== -1).map(item => {
     return {
       name: item.elements[0].text,
-      href: item.attributes.href
+      href: 'http://www.wenku8.net/wap/article/' + item.attributes.href
     }
   })
-  // console.log('json', chapterList)
-  const totalPage = json.elements[1].elements[1].elements[0].elements.find(item => item.type === 'text' && item.text.indexOf('[') === 0 && item.text.indexOf('/') !== -1 && item.text.indexOf(']') === item.text.length)
-  console.log('totalPage', totalPage)
-  fs.writeFileSync('./files/test.json', JSON.stringify(json.elements[1].elements[1].elements[0]))
-  return chapterList
 }
 
 crawler.queue(urls)
