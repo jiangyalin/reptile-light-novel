@@ -49,7 +49,6 @@ const GetUpdatedList = json => {
       href: item.attributes.href
     }
   })
-  console.log('node', node)
   return {
     tips: '更新的xx列表',
     node: node
