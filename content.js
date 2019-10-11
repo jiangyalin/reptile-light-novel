@@ -6,11 +6,11 @@ const convert = require('xml-js')
 
 const updatedList = fs.readFileSync('./files/chapter.json', 'utf8')
 
-// const node = JSON.parse(updatedList).node
-const node = [{
-  bookTitle: 'xx',
-  node: [JSON.parse(updatedList).node[0].node[0]]
-}]
+const node = JSON.parse(updatedList).node
+// const node = [{
+//   bookTitle: 'xx',
+//   node: [JSON.parse(updatedList).node[0].node[0]]
+// }]
 let word = []
 
 word = node.map(item => {
@@ -87,7 +87,6 @@ const main = (res, serialNumber, joint, totalPage, page) => {
   thisEndPage ++
   const xml = res.body.toString()
   const json = convert.xml2json(xml, {compact: false, spaces: 4})
-  // console.log('joint', joint)
   const node = JSON.stringify(json) // 返回的结构
   fs.writeFileSync('./files/text/' + joint.name + ' ' + page + '.html', xml) // 记录内容页
   const txtGroup = GetContentTxtGroup(JSON.parse(JSON.parse(node))) // 分页
@@ -99,10 +98,15 @@ const main = (res, serialNumber, joint, totalPage, page) => {
   // page 页
   word = word.map(item => {
     const node = item.node
-    if ('xx' === item.bookName) {
-      if (!node[serialNumber - 1]) node[serialNumber - 1] = new Array(totalPage)
-      console.log('node[serialNumber - 1][page - 1]', totalPage === 3)
-      node[serialNumber - 1][page - 1] = txt
+    if (joint.bookName === item.bookName) {
+      if (!node[serialNumber - 1]) {
+        node[serialNumber - 1] = {
+          jointName: joint.name,
+          serialNumber: serialNumber - 1,
+          node: new Array(totalPage)
+        }
+      }
+      node[serialNumber - 1].node[page - 1] = txt
     }
     return {
       ...item,
@@ -110,11 +114,13 @@ const main = (res, serialNumber, joint, totalPage, page) => {
     }
   })
   if (thisEndPage === total) {
-    console.log('aa', word)
-    console.log('word.node', word.node)
+    word.forEach(item => {
+      item.node.forEach(node => {
+        const _txt = node.node.join('\r\n')
+        fs.writeFileSync('./files/txt/' + node.jointName + '.txt', _txt) // 记录分页内容
+      })
+    })
   }
-
-  // fs.writeFileSync('./files/txt/' + '测试' + ' - ' + page + '.txt', txt) // 记录分页内容
 }
 
 // 获取总页数
