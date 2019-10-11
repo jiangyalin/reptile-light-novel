@@ -125,9 +125,13 @@ const GetTotalPage = json => {
 const GetUpdatedList = json => {
   const dom = json.elements[1].elements[1].elements[0].elements.filter(item => item.name === 'a' && item.attributes)
   return dom.filter(item => item.attributes.href.indexOf('readchapter.php?aid=') !== -1).map(item => {
+    let href = 'http://www.wenku8.net/wap/article/' + item.attributes.href
+    if (item.elements[0].text === '插图') {
+      href = 'https://www.wenku8.net/modules/article/reader.php?' + item.attributes.href.substring(item.attributes.href.indexOf('?') + 1)
+    }
     return {
       name: item.elements[0].text,
-      href: 'http://www.wenku8.net/wap/article/' + item.attributes.href
+      href
     }
   })
 }

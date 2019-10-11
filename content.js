@@ -6,11 +6,11 @@ const convert = require('xml-js')
 
 const updatedList = fs.readFileSync('./files/chapter.json', 'utf8')
 
-const node = JSON.parse(updatedList).node
-// const node = [{
-//   bookTitle: 'xx',
-//   node: [JSON.parse(updatedList).node[0].node[0]]
-// }]
+// const node = JSON.parse(updatedList).node
+const node = [{
+  bookTitle: '这个勇者明明超TUEEE却过度谨慎',
+  node: [JSON.parse(updatedList).node[0].node[30]]
+}]
 let word = []
 
 word = node.map(item => {
@@ -52,9 +52,15 @@ let chapter = []
 
 const getTotalPageMain = (res, serialNumber, joint) => {
   const xml = res.body.toString()
-  const json = convert.xml2json(xml, {compact: false, spaces: 4})
-  const node = JSON.stringify(json) // 返回的结构
-  const totalPage = GetTotalPage(JSON.parse(JSON.parse(node)))
+  // console.log('xml', xml)
+  let json = {}
+  let node = {}
+  let totalPage = 1
+  if (joint.name !== '插图') {
+    json = convert.xml2json(xml, {compact: false, spaces: 4})
+    node = JSON.stringify(json) // 返回的结构
+    totalPage = GetTotalPage(JSON.parse(JSON.parse(node)))
+  }
   total += totalPage
   if (!chapter.find(item => item.name === joint.name)) {
     chapter.push({
@@ -86,11 +92,26 @@ const GetCrawlerPageUrl = (serialNumber, joint, totalPage) => {
 const main = (res, serialNumber, joint, totalPage, page) => {
   thisEndPage ++
   const xml = res.body.toString()
-  const json = convert.xml2json(xml, {compact: false, spaces: 4})
-  const node = JSON.stringify(json) // 返回的结构
+  let json = {}
+  let node = {}
+  let txtGroup = []
+  let txt = ''
+  let $ = ''
+  if (joint.name !== '插图') {
+    json = convert.xml2json(xml, {compact: false, spaces: 4})
+    node = JSON.stringify(json) // 返回的结构
+    txtGroup = GetContentTxtGroup(JSON.parse(JSON.parse(node))) // 分页
+    txt = TxtGroupToContent(txtGroup)
+  } else {
+    $ = res.$
+    // const imgLength = $('#content').find('img').length
+    console.log('$', $('#content').find('img')[0].attribs.src)
+  }
   fs.writeFileSync('./files/text/' + joint.name + ' ' + page + '.html', xml) // 记录内容页
-  const txtGroup = GetContentTxtGroup(JSON.parse(JSON.parse(node))) // 分页
-  const txt = TxtGroupToContent(txtGroup)
+  // const imgGroup = GetContentImgGroup(JSON.parse(JSON.parse(node))) // 插画
+  // if (joint.name === '插图') {
+  //
+  // }
   // joint.bookName
   // serialNumber 节序号
   // joint.name // 节名
@@ -114,6 +135,7 @@ const main = (res, serialNumber, joint, totalPage, page) => {
     }
   })
   if (thisEndPage === total) {
+    console.log('word', JSON.stringify(word))
     word.forEach(item => {
       item.node.forEach(node => {
         const _txt = node.node.join('\r\n')
@@ -144,6 +166,11 @@ const GetContentTxtGroup = json => {
     }
     return item.type === 'text' && observationEnd
   })
+}
+
+// 获取图片
+const GetContentImgGroup = json => {
+  console.log('json.elements[1].elements[1].elements[0].elements', json.elements[1].elements[1].elements[0].elements)
 }
 
 // 将内容节点转化为内容
