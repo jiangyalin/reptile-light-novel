@@ -6,12 +6,13 @@ const convert = require('xml-js')
 
 const updatedList = fs.readFileSync('./files/chapter.json', 'utf8')
 
-// const node = JSON.parse(updatedList).node
-const node = [{
-  bookTitle: '这个勇者明明超TUEEE却过度谨慎',
-  node: [JSON.parse(updatedList).node[0].node[30]]
-}]
-let word = []
+const node = JSON.parse(updatedList).node
+// const node = [{
+//   bookTitle: '这个勇者明明超TUEEE却过度谨慎',
+//   node: [JSON.parse(updatedList).node[0].node[30]]
+// }]
+let word = [] // 内容序列化
+const wordPixiv = [] // 插画序列化
 
 word = node.map(item => {
   return {
@@ -52,7 +53,6 @@ let chapter = []
 
 const getTotalPageMain = (res, serialNumber, joint) => {
   const xml = res.body.toString()
-  // console.log('xml', xml)
   let json = {}
   let node = {}
   let totalPage = 1
@@ -97,6 +97,12 @@ const main = (res, serialNumber, joint, totalPage, page) => {
   let txtGroup = []
   let txt = ''
   let $ = ''
+  const imgGroup = {
+    bookName: '',
+    serialNumber: '',
+    jointName: '',
+    node: []
+  }
   if (joint.name !== '插图') {
     json = convert.xml2json(xml, {compact: false, spaces: 4})
     node = JSON.stringify(json) // 返回的结构
@@ -104,8 +110,17 @@ const main = (res, serialNumber, joint, totalPage, page) => {
     txt = TxtGroupToContent(txtGroup)
   } else {
     $ = res.$
-    // const imgLength = $('#content').find('img').length
-    console.log('$', $('#content').find('img')[0].attribs.src)
+    const length = $('#content').find('img').length
+    for (let i = 0; i < length; i++) {
+      imgGroup.bookName = joint.bookName
+      imgGroup.serialNumber = serialNumber
+      imgGroup.jointName = joint.name
+      imgGroup.node.push({
+        sn: i + 1,
+        src: $('#content').find('img')[i].attribs.src
+      })
+    }
+    wordPixiv.push(imgGroup)
   }
   fs.writeFileSync('./files/text/' + joint.name + ' ' + page + '.html', xml) // 记录内容页
   // const imgGroup = GetContentImgGroup(JSON.parse(JSON.parse(node))) // 插画
@@ -135,13 +150,14 @@ const main = (res, serialNumber, joint, totalPage, page) => {
     }
   })
   if (thisEndPage === total) {
-    console.log('word', JSON.stringify(word))
-    word.forEach(item => {
-      item.node.forEach(node => {
-        const _txt = node.node.join('\r\n')
-        fs.writeFileSync('./files/txt/' + node.jointName + '.txt', _txt) // 记录分页内容
-      })
-    })
+    // word.forEach(item => {
+    //   item.node.forEach(node => {
+    //     const _txt = node.node.join('\r\n')
+    //     fs.writeFileSync('./files/txt/' + node.jointName + '.txt', _txt) // 记录分页内容
+    //   })
+    // })
+    fs.writeFileSync('./files/word.json', JSON.stringify(word)) // 记录分页内容
+    fs.writeFileSync('./files/wordPixiv.json', JSON.stringify(wordPixiv)) // 记录分页内容
   }
 }
 
