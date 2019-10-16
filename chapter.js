@@ -3,10 +3,11 @@
 const fs = require('fs')
 const Crawler = require('crawler')
 const convert = require('xml-js')
+const toPathName = require('./utils/toPathName')
 
 const bookInfo = fs.readFileSync('./files/bookInfo.json', 'utf8')
 
-const node = [JSON.parse(bookInfo).node[0]]
+const node = JSON.parse(bookInfo).node
 const map = {}
 node.forEach(item => map[item.href] = item.title)
 
@@ -21,7 +22,7 @@ let crawler = new Crawler({
 })
 const urls = []
 
-node.forEach((item, i) => {
+node.forEach(item => {
   let url = {
     uri: item.href,
     jQuery: true,
@@ -77,7 +78,7 @@ const main = (res, book, page) => {
   const xml = res.body.toString()
   const json = convert.xml2json(xml, {compact: false, spaces: 4})
   const node = JSON.stringify(json) // 返回的结构
-  fs.writeFileSync('./files/content/' + book.title + ' ' + page + '.html', xml)
+  fs.writeFileSync('./files/content/' + toPathName(book.title + ' ' + page + '.html'), xml)
   const joint = GetUpdatedList(JSON.parse(JSON.parse(node))) // xx列表
   chapter = chapter.map(item => {
     let node = item.node

@@ -2,10 +2,12 @@
 // 合并内容
 const fs = require('fs')
 const Crawler = require('crawler')
-// const convert = require('xml-js')
+const moment = require('moment')
+const toPathName = require('./utils/toPathName')
 
 const word = JSON.parse(fs.readFileSync('./files/word.json', 'utf8'))
 const wordPixiv = JSON.parse(fs.readFileSync('./files/wordPixiv.json', 'utf8'))
+const last = moment().unix()
 
 let crawler = new Crawler({
   encoding: null, // 编码
@@ -22,7 +24,7 @@ wordPixiv.forEach((data, i) => { // book
   data.node.forEach(item => { // 章
     let url = {
       uri: item.src,
-      jQuery: true,
+      jQuery: false,
       callback: (err, res, done) => {
         if (err) console.log(err)
         if (!err) main(res, data.bookName, i + 1, item.sn)
@@ -42,18 +44,16 @@ word.forEach(item => {
       text += _txt
     }
   })
-  fs.writeFileSync('./files/word/' + item.bookName + '.txt', text)
+  fs.writeFileSync('./files/word/' + toPathName(item.bookName) + '.txt', text)
 })
 
 wordPixiv.forEach(item => {
-  fs.mkdirSync('./files/word/' + item.bookName + ' - 插图', { recursive: true })
-  item.node.forEach(node => {
-
-  })
+  fs.mkdirSync('./files/word/' + toPathName(item.bookName + ' - 插图'), { recursive: true })
 })
 
 const main = (res, bookName, serialNumber, sn) => {
-  fs.writeFileSync('./files/word/' + bookName + ' - 插图/' + bookName + '第' + serialNumber + '卷 ' + sn + '.jpg', res.body)
+  fs.writeFileSync('./files/word/' + toPathName(bookName + ' - 插图') + '/' + toPathName(bookName + '第' + serialNumber + '卷 ' + sn + '.jpg'), res.body)
+  console.log('总计用时：' + (moment().unix() - last) + 's')
 }
 
 crawler.queue(urls)

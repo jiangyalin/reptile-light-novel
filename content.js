@@ -3,6 +3,7 @@
 const fs = require('fs')
 const Crawler = require('crawler')
 const convert = require('xml-js')
+const toPathName = require('./utils/toPathName')
 
 const updatedList = fs.readFileSync('./files/chapter.json', 'utf8')
 
@@ -122,11 +123,7 @@ const main = (res, serialNumber, joint, totalPage, page) => {
     }
     wordPixiv.push(imgGroup)
   }
-  fs.writeFileSync('./files/text/' + joint.name + ' ' + page + '.html', xml) // 记录内容页
-  // const imgGroup = GetContentImgGroup(JSON.parse(JSON.parse(node))) // 插画
-  // if (joint.name === '插图') {
-  //
-  // }
+  fs.writeFileSync('./files/text/' + toPathName(joint.name + ' ' + page + '.html'), xml) // 记录内容页
   // joint.bookName
   // serialNumber 节序号
   // joint.name // 节名
@@ -182,11 +179,6 @@ const GetContentTxtGroup = json => {
     }
     return item.type === 'text' && observationEnd
   })
-}
-
-// 获取图片
-const GetContentImgGroup = json => {
-  console.log('json.elements[1].elements[1].elements[0].elements', json.elements[1].elements[1].elements[0].elements)
 }
 
 // 将内容节点转化为内容

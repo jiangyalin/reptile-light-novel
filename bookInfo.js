@@ -3,6 +3,7 @@
 const fs = require('fs')
 const Crawler = require('crawler')
 const convert = require('xml-js')
+const toPathName = require('./utils/toPathName')
 
 const updatedList = fs.readFileSync('./files/updatedList.json', 'utf8')
 
@@ -40,7 +41,7 @@ const main = (res, name, isEnd) => {
   const xml = res.body.toString()
   const json = convert.xml2json(xml, {compact: false, spaces: 4})
   const node = JSON.stringify(json) // 返回的结构
-  fs.writeFileSync('./files/info/' + name + '.html', xml)
+  fs.writeFileSync('./files/info/' + toPathName(name + '.html'), xml)
   const href = GetUpdatedList(JSON.parse(JSON.parse(node))) // xx列表
   chapter.push({
     title: name,
