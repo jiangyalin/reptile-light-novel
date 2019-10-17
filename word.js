@@ -4,9 +4,10 @@ const fs = require('fs')
 const Crawler = require('crawler')
 const moment = require('moment')
 const toPathName = require('./utils/toPathName')
+const filterStringPage = require('./utils/filterStringPage')
 
 const word = JSON.parse(fs.readFileSync('./files/word.json', 'utf8'))
-const wordPixiv = JSON.parse(fs.readFileSync('./files/wordPixiv.json', 'utf8'))
+const wordPixiv = JSON.parse(fs.readFileSync('./files/wordPixiv.json', 'utf8')).filter((item, i) => i < 0)
 const last = moment().unix()
 
 let crawler = new Crawler({
@@ -37,11 +38,17 @@ wordPixiv.forEach((data, i) => { // book
 
 word.forEach(item => {
   let text = item.bookName + '\r\n'
-  item.node.forEach(node => {
+  item.node.forEach((node, i) => {
     if (node) {
-      const _txt = node.jointName + '\r\n' + node.node.join('\r\n')
+      const _txt = node.jointName + '\r\n' + node.node.map(item => filterStringPage(item)).join('')
       // fs.writeFileSync('./files/txt/' + node.jointName + '.txt', _txt) // 记录分页内容
       text += _txt
+      if (i === 0) {
+        // console.log('_txt', _txt)
+        // console.log('bb')
+        // console.log('_txt', _txt)
+        // console.log('aa')
+      }
     }
   })
   fs.writeFileSync('./files/word/' + toPathName(item.bookName) + '.txt', text)
