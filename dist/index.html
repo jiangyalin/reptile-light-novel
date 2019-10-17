@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>这是测试内容</p>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+<script>
+  var book = ePub("/")
+  var rendition = book.renderTo("area")
+  rendition.display()
+</script>
+</html>
