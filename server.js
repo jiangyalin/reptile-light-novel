@@ -40,6 +40,7 @@ module.exports = (callback = () => {}) => {
     const updatedList = GetUpdatedList(JSON.parse(JSON.parse(node)), type) // xx列表
     fs.writeFileSync('./files/updatedList.json', JSON.stringify(updatedList)) // 写入后去的更新信息
     callback()
+    console.log('aaa')
   }
 
   // 获取最新更新的xx列表（格式化后的xml的json结构）

@@ -54,6 +54,7 @@ module.exports = (callback = () => {}) => {
         node: chapter
       }))
       callback()
+      console.log('bb')
     }
   }
 
