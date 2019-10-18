@@ -33,10 +33,10 @@ const info = {
   }]
 }
 
-// initTemplate(info.title, () => {
-//   createOpfTemplate(info)
-//   createNcxTemplate(info)
-// })
+initTemplate(info.title, () => {
+  createOpfTemplate(info)
+  createNcxTemplate(info)
+})
 
 const readFileList = (dir, filesList = []) => {
   const files = fs.readdirSync(dir)

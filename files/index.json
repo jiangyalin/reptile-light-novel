@@ -29,75 +29,49 @@
                     ]
                 },
                 {
-                    "type": "comment",
-                    "comment": "如果你看到这行信息，说明在使用的浏览器不支持文库wap版使用的wml代码，推荐你更换uc浏览器(注意选择非HD版)"
-                },
-                {
                     "type": "element",
                     "name": "card",
                     "attributes": {
-                        "id": "index.php",
-                        "title": "轻小说文库"
+                        "id": "toplist.php-",
+                        "title": "轻小说文库 - 最近更新"
                     },
                     "elements": [
                         {
                             "type": "element",
                             "name": "p",
-                            "attributes": {
-                                "align": "center"
-                            },
                             "elements": [
                                 {
                                     "type": "text",
-                                    "text": "轻小说文库WAP版"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "wap.wenku8.com\r\n"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "element",
-                            "name": "p",
-                            "elements": [
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n\r\n您好!游客,"
+                                    "text": "\r\n\r\n您好!"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/login.php",
-                                        "title": "登录"
+                                        "href": "http://www.wenku8.net/wap/userinfo.php?id=119092&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "登录"
+                                            "text": "七罪魔魂"
                                         }
                                     ]
                                 },
                                 {
                                     "type": "text",
-                                    "text": "."
+                                    "text": ","
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/register.php",
-                                        "title": "注册"
+                                        "href": "http://www.wenku8.net/wap/logout.php?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": "链接"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "注册"
+                                            "text": "退出"
                                         }
                                     ]
                                 },
@@ -109,7 +83,25 @@
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/message.php?box=inbox"
+                                        "href": "http://www.wenku8.net/wap/?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": "首页"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "首页"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": ".\r\n"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.net/wap/message.php?box=inbox&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                     },
                                     "elements": [
                                         {
@@ -120,13 +112,13 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "."
+                                    "text": ".\r\n"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/bookcase.php"
+                                        "href": "http://www.wenku8.net/wap/article/bookcase.php?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                     },
                                     "elements": [
                                         {
@@ -137,30 +129,31 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "."
+                                    "text": ".\r\n"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/sortlist.php"
+                                        "href": "http://www.wenku8.net/wap/article/search.php?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": "搜书"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "目录"
+                                            "text": "搜书"
                                         }
                                     ]
                                 },
                                 {
-                                    "type": "text",
-                                    "text": "."
+                                    "type": "element",
+                                    "name": "br"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/sort.php",
+                                        "href": "http://www.wenku8.net/wap/article/sort.php?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
                                         "title": "分类"
                                     },
                                     "elements": [
@@ -172,13 +165,13 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "."
+                                    "text": ".\r\n"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/top.php",
+                                        "href": "http://www.wenku8.net/wap/article/top.php?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
                                         "title": "排行"
                                     },
                                     "elements": [
@@ -190,13 +183,13 @@
                                 },
                                 {
                                     "type": "text",
-                                    "text": "."
+                                    "text": ".\r\n"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/sortlist.php?fullflag=1"
+                                        "href": "http://www.wenku8.net/wap/article/sortlist.php?fullflag=1&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                     },
                                     "elements": [
                                         {
@@ -206,87 +199,667 @@
                                     ]
                                 },
                                 {
+                                    "type": "text",
+                                    "text": ".\r\n"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=postdate&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "新书"
+                                        }
+                                    ]
+                                },
+                                {
                                     "type": "element",
                                     "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n\r\n\r\n最近更新，共2437本"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2278&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《以我的能力创造开外挂的老婆们(在异世界解体技能后开挂新娘增加了)》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2278&cid=100976&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第五卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2527&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《七柄魔剑将其支配》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2527&cid=100944&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第四卷 第二章"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2347&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《14岁与插画家》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2347&cid=100943&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第四卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2592&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《你喜欢被可爱女生攻陷吗？》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2592&cid=100940&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二卷 间章 南条姊妹的实习保健体育"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=1034&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《恶魔高校DxD(High School DxD)》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=1034&cid=100938&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "短篇集 DX.5 Superhero Trial Life.3 英才教育的留宿会"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=1864&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《Fairy Tale 幻想编年史～不懂察言观色的异世界生活～》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=1864&cid=100931&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第七卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=366&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《德尔菲尼亚战记》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=366&cid=100914&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第十五卷 胜利的邀约 第三章"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2620&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《我说你们也太喜欢我这个单身男了吧》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2620&cid=100910&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二卷 第一章 羽鸟英玲奈想要成长"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2466&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《田中～年龄等于单身资历的魔法师～》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2466&cid=100903&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第三卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2469&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《浅草鬼妻日记》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2469&cid=100897&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第六卷 妖怪夫妇大驾光临 后记"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2363&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《底层剑士与神兽〈女儿〉的日常生活》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2363&cid=100885&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第三卷 全家携手养宠物 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2495&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《交叉连结》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2495&cid=100884&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二卷 与电脑神姬铃夏的互换身体完全游戏攻略 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2542&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《想要成为影之实力者》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2542&cid=100875&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第三卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=1240&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《千之魔剑与盾之少女》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=1240&cid=100862&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第十三卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2548&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《被卷入了勇者召唤事件却发现异世界很和平》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2548&cid=100861&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第三卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2552&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《靠废柴技能【状态异常】成为最强的我将蹂躏一切》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2552&cid=100849&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2573&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《圣剑学院的魔剑使》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2573&cid=100848&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2633&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《青梅竹马绝对不会输的恋爱喜剧》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2633&cid=100839&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第一卷 插图"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=2159&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《刺客守则(暗杀者的慈悲)》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=2159&cid=100825&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第八卷 暗杀教师与幻月革命 特典"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "articleinfo.php?id=381&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "《加速世界》"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "a",
+                                    "attributes": {
+                                        "href": "readchapter.php?aid=381&cid=100824&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "第二十四卷 第十一章"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "br"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "\r\n\r\n\r\n到第"
                                 },
                                 {
                                     "type": "element",
                                     "name": "input",
                                     "attributes": {
-                                        "name": "searchkey",
-                                        "type": "text",
-                                        "size": "5",
-                                        "maxlength": "30",
-                                        "value": ""
+                                        "name": "page",
+                                        "format": "*N",
+                                        "size": "4"
                                     }
                                 },
                                 {
-                                    "type": "element",
-                                    "name": "anchor",
-                                    "attributes": {
-                                        "title": "搜书名"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "搜书名\r\n"
-                                        },
-                                        {
-                                            "type": "element",
-                                            "name": "go",
-                                            "attributes": {
-                                                "href": "http://www.wenku8.net/wap/article/search.php",
-                                                "method": "post"
-                                            },
-                                            "elements": [
-                                                {
-                                                    "type": "element",
-                                                    "name": "postfield",
-                                                    "attributes": {
-                                                        "name": "action",
-                                                        "value": "search"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "element",
-                                                    "name": "postfield",
-                                                    "attributes": {
-                                                        "name": "searchtype",
-                                                        "value": "articlename"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "element",
-                                                    "name": "postfield",
-                                                    "attributes": {
-                                                        "name": "searchkey",
-                                                        "value": "$(searchkey)"
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
                                     "type": "text",
-                                    "text": "-\r\n"
+                                    "text": "页"
                                 },
                                 {
                                     "type": "element",
                                     "name": "anchor",
                                     "attributes": {
-                                        "title": "作者"
+                                        "title": "跳转"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "作者\r\n"
+                                            "text": "跳转"
                                         },
                                         {
                                             "type": "element",
                                             "name": "go",
                                             "attributes": {
-                                                "href": "http://www.wenku8.net/wap/article/search.php",
+                                                "href": "toplist.php?class=0&sort=lastupdate&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
                                                 "method": "post"
                                             },
                                             "elements": [
@@ -294,24 +867,8 @@
                                                     "type": "element",
                                                     "name": "postfield",
                                                     "attributes": {
-                                                        "name": "action",
-                                                        "value": "search"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "element",
-                                                    "name": "postfield",
-                                                    "attributes": {
-                                                        "name": "searchtype",
-                                                        "value": "author"
-                                                    }
-                                                },
-                                                {
-                                                    "type": "element",
-                                                    "name": "postfield",
-                                                    "attributes": {
-                                                        "name": "searchkey",
-                                                        "value": "$(searchkey)"
+                                                        "name": "page",
+                                                        "value": "$(page)"
                                                     }
                                                 }
                                             ]
@@ -324,667 +881,95 @@
                                 },
                                 {
                                     "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n【文库公告】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n[通告]本页面推荐使用UC浏览器访问"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n[通告]应版权方要求删除部分小说"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n【今日热榜】"
-                                },
-                                {
-                                    "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=dayvisit",
-                                        "title": "更多"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=1&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": "<< "
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "更多.."
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1973"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "欢迎来到实力至上主义的教室"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2542"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "想要成为影之实力者"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1034"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "恶魔高校DxD(High School DxD)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1787"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "关于我转生变成史莱姆这档事(关于我转生成为史莱姆的那件事)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2159"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "刺客守则(暗杀者的慈悲)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1864"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "Fairy Tale 幻想编年史～不懂察言观色的异世界生活～"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n【最近更新】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=lastupdate",
-                                        "title": "更多"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "更多.."
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1034"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "恶魔高校DxD(High School DxD)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1864"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "Fairy Tale 幻想编年史～不懂察言观色的异世界生活～"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2527"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "七柄魔剑将其支配"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=366"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "德尔菲尼亚战记"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2347"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "14岁与插画家"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2620"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "我说你们也太喜欢我这个单身男了吧"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n【新书风云榜】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=postdate",
-                                        "title": "更多"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "更多.."
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2626"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "最强出涸皇子的暗跃帝位争夺"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2625"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "点满农民相关技能后，不知为何就变强了。"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2623"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "数字拯救弱小国家！"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2631"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "数位伊甸 Digital Eden Attracts Humanity"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2630"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "Fate Requiem"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2632"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "在流星雨中逝去的你(令你逝去的流星雨)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n【每周书单】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1508"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "在地下城寻求邂逅是否搞错了什么(期待在地下城邂逅有错吗)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2080"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "平凡职业造就世界最强"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2346"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "只要长得可爱，即使是变态你也喜欢吗？"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=1755"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "异世界超能魔术师"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=2306"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "Re:Stage！"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/articleinfo.php?id=827"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "COP CRAFT(全缉毒狂潮)"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n【快速导航】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "a",
-                                    "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=allvisit"
-                                    },
-                                    "elements": [
-                                        {
-                                            "type": "text",
-                                            "text": "热度排名"
+                                            "text": "<< "
                                         }
                                     ]
                                 },
                                 {
                                     "type": "text",
-                                    "text": "|"
+                                    "text": " 1 "
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=goodnum"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=2&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": " 2 "
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "最受关注"
+                                            "text": " 2 "
                                         }
                                     ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=anime"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=3&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": " 3 "
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "已动画化"
+                                            "text": " 3 "
                                         }
                                     ]
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "|"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://www.wenku8.net/wap/article/toplist.php?sort=weekvote"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=4&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": " 4 "
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "会员热推"
+                                            "text": " 4 "
                                         }
                                     ]
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n\r\n【QQ超级群】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n同好会：56102032"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n御宅社：230063730"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n同萌会：385413858"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n只能加一个请勿多加"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "\r\n【友情推荐】"
-                                },
-                                {
-                                    "type": "element",
-                                    "name": "br"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://wapp.baidu.com/f?kw=%C7%E1%CE%C4%BF%E2"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=5&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": " 5 "
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "轻文库吧"
+                                            "text": " 5 "
                                         }
                                     ]
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "|"
                                 },
                                 {
                                     "type": "element",
                                     "name": "a",
                                     "attributes": {
-                                        "href": "http://wapp.baidu.com/f?kw=%C7%E1%D0%A1%CB%B5"
+                                        "href": "toplist.php?class=0&sort=lastupdate&page=6&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6",
+                                        "title": " >>"
                                     },
                                     "elements": [
                                         {
                                             "type": "text",
-                                            "text": "轻小说吧"
+                                            "text": " >>"
                                         }
                                     ]
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "[1/122]"
                                 },
                                 {
                                     "type": "element",
@@ -1001,7 +986,7 @@
                                             "type": "element",
                                             "name": "a",
                                             "attributes": {
-                                                "href": "http://www.wenku8.net/wap/newmessage.php?tosys=1"
+                                                "href": "http://www.wenku8.net/wap/newmessage.php?tosys=1&PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                             },
                                             "elements": [
                                                 {
@@ -1026,7 +1011,7 @@
                                             "type": "element",
                                             "name": "a",
                                             "attributes": {
-                                                "href": "https://www.wenku8.net"
+                                                "href": "https://www.wenku8.net?PHPSESSID=r8nm4mpvpu0c20e0r97o06snemq1rjg6"
                                             },
                                             "elements": [
                                                 {
@@ -1050,7 +1035,7 @@
                                     "type": "element",
                                     "name": "img",
                                     "attributes": {
-                                        "src": "http://c.cnzz.com/wapstat.php?siteid=1254174784&r=&rnd=1267221355",
+                                        "src": "http://c.cnzz.com/wapstat.php?siteid=1254174784&r=&rnd=10687651",
                                         "width": "0",
                                         "height": "0"
                                     }
